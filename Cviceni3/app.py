@@ -70,18 +70,7 @@ def pridej():
     return render_template("pridej.html")
 
 
-#@app.route("/smazat", methods=["GET", "POST", "DELETE"])
-#def smazat():
-#    if request.method == "DELETE":
- #       nazev = str(request.form.get("nazev"))
-  #      for pizza in nabidka:
-  #          if pizza[nazev] == nazev:
-   #             del nabidka[nazev]
-   #             return f" pizza {nazev} byla smazana"
-    #        else:
-    #            return f"pizza {nazev} nebyla nalezena"
-    #    return redirect("/")
-   # return render_template("smazat.html")
+
 
 @app.route("/api/picy", methods=["GET"])
 def api_get_picy():
